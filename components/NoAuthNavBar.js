@@ -1,9 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Link from 'next/link';
-import {
-  Navbar, Container, Nav,
-} from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 
 export default function NoAuthNavBar() {
   return (
@@ -20,7 +18,7 @@ export default function NoAuthNavBar() {
               <Nav.Link>Home</Nav.Link>
             </Link>
             <Link passHref href="/delete-me">
-              <Nav.Link>Delete Me</Nav.Link>
+              <Nav.Link>smiley face dont delete me nooooo</Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>

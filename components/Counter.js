@@ -19,13 +19,10 @@ export default function Counter({ title }) {
           <button type="button" className={value <= 0 ? 'btn btn-danger' : 'btn btn-success'} onClick={handleClick}>
             Increment
           </button>
-          {value <= 0 ? (
-            ''
-          ) : (
-            <button type="button" onClick={() => setValue((prevState) => prevState - 1)}>
-              Decrement
-            </button>
-          )}
+
+          <button disabled={value === 0} type="button" onClick={() => setValue((prevState) => prevState - 1)}>
+            Decrement
+          </button>
 
           <button type="button" onClick={() => setValue(0)}>
             Reset
